@@ -1,0 +1,2 @@
+require('lazyconf')
+require('plugins')

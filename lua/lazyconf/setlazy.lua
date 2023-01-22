@@ -13,6 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { "rebelot/kanagawa.nvim" }, -- 主题
+  { "sainnhe/gruvbox-material" }, 
+
+  -- { "ybian/smartim" }, -- smartim
   {
     "nvim-lualine/lualine.nvim", -- 状态栏
     dependencies = { "kyazdani42/nvim-web-devicons"

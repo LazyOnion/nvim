@@ -34,4 +34,4 @@ opt.smartcase = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
-vim.cmd("colorscheme kanagawa") -- 主题
+vim.cmd("colorscheme gruvbox-material") -- 主题

@@ -1,5 +1,5 @@
 require('lualine').setup({
     options = {
-        theme = 'kanagawa'
+        theme = 'gruvbox-material'
     }
 })

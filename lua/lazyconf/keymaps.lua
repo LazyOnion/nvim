@@ -13,9 +13,12 @@ keymap("i", "jk", "<ESC>", opts)
 -- Save file 
 keymap("n", "<C-s>", "<cmd>w<CR>", opts)
 keymap("n", "<C-q>", "<cmd>q<CR>", opts)
+keymap("i", "<C-s>", "<cmd>w<CR>", opts)
+keymap("i", "<C-q>", "<cmd>q<CR>", opts)
 
 -- buffer delet
-keymap("n", "<C-b>", "<cmd>bp | bd<CR>", opts)
+-- keymap("n", "<C-b>", "<cmd>bp | bd<CR>", opts)
+keymap("n", "<C-b>", "<cmd>bd<CR>", opts)
 
 -- Clear highlights
 keymap("n", "<leader>nh", "<cmd>nohlsearch<CR>", opts)
@@ -50,5 +53,11 @@ keymap("n", "<leader>5", "<Cmd>BufferGoto 5<CR>", opts)
 
 -- Markdown preview
 keymap("n", "<C-f>", "<cmd>MarkdownPreviewToggle<CR>", opts)
+
+-- Resize the buffersize
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 

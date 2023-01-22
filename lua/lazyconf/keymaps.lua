@@ -10,10 +10,12 @@ vim.g.mapleader = " "
 -- quick esc
 keymap("i", "jk", "<ESC>", opts)
 
--- Save Exit file 
-keymap("n", "<C-s>", ":w!<CR>", opts)
-keymap("n", "<C-q>", ":q!<CR>", opts)
-keymap("n", "<C-Q>", ":wq!<CR>", opts)
+-- Save file 
+keymap("n", "<C-s>", "<cmd>w<CR>", opts)
+keymap("n", "<C-q>", "<cmd>q<CR>", opts)
+
+-- buffer delet
+keymap("n", "<C-b>", "<cmd>bp | bd<CR>", opts)
 
 -- Clear highlights
 keymap("n", "<leader>nh", "<cmd>nohlsearch<CR>", opts)

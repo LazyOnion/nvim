@@ -19,11 +19,11 @@ neotree.setup {
         ignored = "I",
         unstaged = "",
         staged = "",
-        conflict = ""
+        conflict = "C"
       }
     }
   },
   window = {
-    width = 30
+    width = 25
   }
 }

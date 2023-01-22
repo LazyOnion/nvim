@@ -40,6 +40,7 @@ require("lazy").setup({
   { "iamcco/markdown-preview.nvim" }, --markdown预览
   { "akinsho/toggleterm.nvim" }, --terminal manager
   { "lambdalisue/suda.vim" }, -- 代替vim中的w !sudo tee %
+  { "lewis6991/impatient.nvim" }, -- 加快在 Neovim 中加载 Lua 模块以缩短启动时间
 
 
   -- lsp

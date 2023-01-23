@@ -3,7 +3,7 @@ if not ok then
  return
 end
 
-require("mason").setup({
+mason.setup({
     ui = {
         icons = {
             package_installed = "✓",

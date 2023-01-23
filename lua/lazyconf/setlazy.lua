@@ -63,11 +63,13 @@ require("lazy").setup({
   -- Snippets
   {"L3MON4D3/LuaSnip"},             -- Required
   {"rafamadriz/friendly-snippets"}, -- Optional
-  
   {
       'glepnir/lspsaga.nvim',
       event = 'BufRead',
-  }
+  },
+
+  -- hop
+  { "phaazon/hop.nvim" } -- easy motion
 })
 
 

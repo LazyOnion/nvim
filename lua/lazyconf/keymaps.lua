@@ -79,3 +79,10 @@ keymap("n", "<leader>sl", "<cmd>Lspsaga show_line_diagnostics<CR>")
 keymap("n", "<leader>sc", "<cmd>Lspsaga show_cursor_diagnostics<CR>")
 -- Show buffer diagnostic
 keymap("n", "<leader>sb", "<cmd>Lspsaga show_buf_diagnostics<CR>")
+
+-- hop
+keymap("n", "<leader>jl", "<cmd>HopLineStart<CR>", opts)
+keymap("n", "<leader>ji", "<cmd>HopAnywhereCurrentLine<CR>", opts)
+keymap("n", "<leader>ja", "<cmd>HopAnywhere<CR>", opts)
+keymap("n", "<leader>jc", "<cmd>HopChar1<CR>", opts)
+keymap("n", "<leader>jC", "<cmd>HopChar2<CR>", opts)

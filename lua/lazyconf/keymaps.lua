@@ -72,3 +72,10 @@ keymap("n", "gr", "<cmd>Lspsaga rename<CR>")
 keymap("n", "gR", "<cmd>Lspsaga rename ++project<CR>")
 -- Lsp finder find the symbol definition implement reference
 keymap("n", "gf", "<cmd>Lspsaga lsp_finder<CR>")
+
+-- show_line_diagnostics float window unfocus
+keymap("n", "<leader>sl", "<cmd>Lspsaga show_line_diagnostics<CR>")
+-- Show cursor diagnostic
+keymap("n", "<leader>sc", "<cmd>Lspsaga show_cursor_diagnostics<CR>")
+-- Show buffer diagnostic
+keymap("n", "<leader>sb", "<cmd>Lspsaga show_buf_diagnostics<CR>")

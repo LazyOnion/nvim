@@ -61,4 +61,14 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- lsp
-keymap('n', 'gd', "<cmd>lua require'telescope.builtin'.lsp_definitions()<CR>", opts)
+-- Peek Definition
+-- support tagstack C-t jump back
+keymap("n", "gD", "<cmd>Lspsaga peek_definition<CR>")
+-- Go to Definition
+keymap("n","gd", "<cmd>Lspsaga goto_definition<CR>")
+-- Rename
+keymap("n", "gr", "<cmd>Lspsaga rename<CR>")
+-- Rename word in whole project
+keymap("n", "gR", "<cmd>Lspsaga rename ++project<CR>")
+-- Lsp finder find the symbol definition implement reference
+keymap("n", "gf", "<cmd>Lspsaga lsp_finder<CR>")

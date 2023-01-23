@@ -18,7 +18,7 @@ keymap("i", "<C-q>", "<cmd>q<CR>", opts)
 
 -- buffer delet
 -- keymap("n", "<C-b>", "<cmd>bp | bd<CR>", opts)
-keymap("n", "<C-b>", "<cmd>bd<CR>", opts)
+keymap("n", "<C-b>", "<cmd>bd!<CR>", opts)
 
 -- Clear highlights
 keymap("n", "<leader>nh", "<cmd>nohlsearch<CR>", opts)
@@ -60,4 +60,5 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
-
+-- lsp
+keymap('n', 'gd', "<cmd>lua require'telescope.builtin'.lsp_definitions()<CR>", opts)

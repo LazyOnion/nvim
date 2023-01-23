@@ -4,7 +4,7 @@ if not ok then
 end
 
 neotree.setup {
-  enable_diagnostics = false,
+  enable_diagnostics = true,
   default_component_configs = {
     icon = {
       folder_empty = '-'

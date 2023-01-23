@@ -47,12 +47,27 @@ require("lazy").setup({
 
 
   -- lsp
-  { "neovim/nvim-lspconfig" }, -- lspconfig
-  { "hrsh7th/nvim-cmp" }, -- Autocompletion plugin
-  { "hrsh7th/cmp-nvim-lsp" }, -- LSP source for nvim-cmp
-  { "saadparwaiz1/cmp_luasnip" }, -- Snippets source for nvim-cmp
-  { "L3MON4D3/LuaSnip" }, -- Snippets plugin
+  -- LSP Support
+  {"neovim/nvim-lspconfig"},             -- Required
+  {"williamboman/mason.nvim"},           -- Optional
+  {"williamboman/mason-lspconfig.nvim"}, -- Optional
 
+  -- Autocompletion
+  {"hrsh7th/nvim-cmp"},         -- Required
+  {"hrsh7th/cmp-nvim-lsp"},     -- Required
+  {"hrsh7th/cmp-buffer"},       -- Optional
+  {"hrsh7th/cmp-path"},         -- Optional
+  {"saadparwaiz1/cmp_luasnip"}, -- Optional
+  {"hrsh7th/cmp-nvim-lua"},     -- Optional
+
+  -- Snippets
+  {"L3MON4D3/LuaSnip"},             -- Required
+  {"rafamadriz/friendly-snippets"}, -- Optional
+  
+  {
+      'glepnir/lspsaga.nvim',
+      event = 'BufRead',
+  }
 })
 
 

@@ -19,7 +19,8 @@ vim.g.mapleader = " "
 "<C-b>" -- delet the buffer (normal mode)
 
 "<leader>nh" -- cancel the highlight (normal mode)
-"<" ">" -- indent (visual mode)
+">" -- indent (visual mode)
+"<" -- go back (visual mode)
 "<leader>\" -- comment code (all mode)
 "<leader>e" -- neotree focus toggle (normal mode)
 "<leader>o" -- neotree float toggle (normal mode)

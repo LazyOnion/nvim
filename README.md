@@ -4,11 +4,10 @@ Fully written in lua and use [lazy.nvim](https://github.com/folke/lazy.nvim) as 
 
 ### some screenshots
 
-![image](https://user-images.githubusercontent.com/93063038/213991958-66a82835-9b7a-4886-9a31-c99651b4b6b5.png)
-![image](https://user-images.githubusercontent.com/93063038/213992241-2c9c7437-052e-4bc4-bc00-8afc6c4c7e3e.png)
-![image](https://user-images.githubusercontent.com/93063038/213992378-79f30b01-3de1-422d-b2cd-ad2f370077db.png)
-![image](https://user-images.githubusercontent.com/93063038/213992494-bd61069b-ad15-4760-9150-5606eea0f1be.png)
-
+![image](https://user-images.githubusercontent.com/93063038/214219108-ab10d13d-a233-4c11-891b-6804d2b63e30.png)
+![image](https://user-images.githubusercontent.com/93063038/214219288-bedf3621-4d25-404f-87a6-63e304626578.png)
+![image](https://user-images.githubusercontent.com/93063038/214219432-004d59e6-83c2-44b1-8aac-1d47a3514f35.png)
+![image](https://user-images.githubusercontent.com/93063038/214219701-64e8f189-92da-41df-8c16-b5c634cd72a9.png)
 ### keybindings
 
 ```
@@ -40,7 +39,13 @@ vim.g.mapleader = " "
 "gR" -- rename word in full project (normal mode)
 "gf" -- find the symbol definition implement reference (normal mode)
 
-"<leader>sl" show line diagnostics (normal mode)
-"<leader>sc" show cursor diagnostics (normal mode)
-"<leader>sb" show buffer diagnostics (normal mode)
+"<leader>sl" -- show line diagnostics (normal mode)
+"<leader>sc" -- show cursor diagnostics (normal mode)
+"<leader>sb" -- show buffer diagnostics (normal mode)
+
+"<leader>jl" -- HopLineStart
+"<leader>ji" -- HopAnywhereCurrentLine
+"<leader>ja" -- HopAnywhere
+"<leader>jc" -- HopChar1
+"<leader>jC" -- HopChar2
 ```

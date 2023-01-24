@@ -43,9 +43,9 @@ vim.g.mapleader = " "
 "<leader>sc" -- show cursor diagnostics (normal mode)
 "<leader>sb" -- show buffer diagnostics (normal mode)
 
-"<leader>jl" -- HopLineStart
-"<leader>ji" -- HopAnywhereCurrentLine
-"<leader>ja" -- HopAnywhere
-"<leader>jc" -- HopChar1
-"<leader>jC" -- HopChar2
+"<leader>jl" -- HopLineStart (normal mode)
+"<leader>ji" -- HopAnywhereCurrentLine (normal mode)
+"<leader>ja" -- HopAnywhere (normal mode)
+"<leader>jc" -- HopChar1 (normal mode)
+"<leader>jC" -- HopChar2 (normal mode)
 ```

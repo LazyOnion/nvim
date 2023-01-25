@@ -24,6 +24,7 @@ vim.g.mapleader = " "
 "<leader>\" -- comment code (all mode)
 "<leader>e" -- neotree focus toggle (normal mode)
 "<leader>o" -- neotree float toggle (normal mode)
+"<C-\" -- toggle terminal (normal mode)
 
 "<C-p>" -- focus to previous buffer (normal mode)
 "<C-n>" -- focus to next buffer (normal mode)

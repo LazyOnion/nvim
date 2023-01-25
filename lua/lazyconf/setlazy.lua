@@ -72,6 +72,8 @@ require("lazy").setup({
   { "phaazon/hop.nvim" }, -- easy motion
   -- indent guide
   { "lukas-reineke/indent-blankline.nvim" },
+  -- alpha
+  { "goolord/alpha-nvim" },
 })
 
 

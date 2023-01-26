@@ -13,9 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { "rebelot/kanagawa.nvim" }, -- 主题
-  { "sainnhe/gruvbox-material" }, 
-
-  -- { "ybian/smartim" }, -- smartim
+  { "sainnhe/gruvbox-material" },
   {
     "nvim-lualine/lualine.nvim", -- 状态栏
     dependencies = { "kyazdani42/nvim-web-devicons"
@@ -41,6 +39,7 @@ require("lazy").setup({
   { "p00f/nvim-ts-rainbow" }, -- 彩虹括号
   { "romgrk/barbar.nvim" }, -- bufferline
   { "iamcco/markdown-preview.nvim" }, --markdown预览
+  { "ellisonleao/glow.nvim" },
   { "akinsho/toggleterm.nvim" }, --terminal manager
   { "lambdalisue/suda.vim" }, -- 代替vim中的w !sudo tee %
   { "lewis6991/impatient.nvim" }, -- 加快在 Neovim 中加载 Lua 模块以缩短启动时间
@@ -59,6 +58,7 @@ require("lazy").setup({
   {"hrsh7th/cmp-path"},         -- Optional
   {"saadparwaiz1/cmp_luasnip"}, -- Optional
   {"hrsh7th/cmp-nvim-lua"},     -- Optional
+  {"onsails/lspkind.nvim"},
 
   -- Snippets
   {"L3MON4D3/LuaSnip"},             -- Required

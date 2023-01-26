@@ -80,7 +80,7 @@ keymap("n", "<leader>sc", "<cmd>Lspsaga show_cursor_diagnostics<CR>")
 -- Show buffer diagnostic
 keymap("n", "<leader>sb", "<cmd>Lspsaga show_buf_diagnostics<CR>")
 
--- hop
+-- hop (easy to motion)
 keymap("n", "<leader>jl", "<cmd>HopLineStart<CR>", opts)
 keymap("n", "<leader>ji", "<cmd>HopAnywhereCurrentLine<CR>", opts)
 keymap("n", "<leader>ja", "<cmd>HopAnywhere<CR>", opts)

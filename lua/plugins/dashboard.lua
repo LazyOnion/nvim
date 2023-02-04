@@ -5,6 +5,9 @@ end
 
 local dashboard = require "alpha.themes.dashboard"
 dashboard.section.header.val = {
+[[                                ]],
+[[                                ]],
+[[                                ]],
 [[              .__               ]],
 [[  ____   ____ |__| ____   ____  ]],
 [[ /  _ \ /    \|  |/  _ \ /    \ ]],
@@ -16,12 +19,11 @@ dashboard.section.buttons.val = {
   dashboard.button("e", " " .. " New file", ":ene <BAR> startinsert <CR>"),
   dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
   dashboard.button("t", " " .. " Find text", ":Telescope live_grep <CR>"),
-  dashboard.button("p", " " .. " Find project", ":lua require('telescope').extensions.projects.projects()<CR>"),
   dashboard.button("c", " " .. " Config", ":e $MYVIMRC <CR>"),
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 local function footer()
-  return "Don't be stupid"
+  return "Don't be Lazy"
 end
 
 dashboard.section.footer.val = footer()

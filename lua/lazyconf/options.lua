@@ -3,7 +3,6 @@ local opt = vim.opt
 -- 显示行号
 opt.relativenumber = false
 opt.number = true
-
 -- 缩进
 opt.tabstop = 4
 opt.shiftwidth = 4

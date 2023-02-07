@@ -55,10 +55,10 @@ keymap("n", "<leader>5", "<Cmd>BufferGoto 5<CR>", opts)
 keymap("n", "<C-f>", "<cmd>MarkdownPreviewToggle<CR>", opts)
 
 -- Resize the buffersize
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-S-k>", ":resize -2<CR>", opts)
+keymap("n", "<C-S-j>", ":resize +2<CR>", opts)
+keymap("n", "<C-S-h>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-S-l>", ":vertical resize +2<CR>", opts)
 
 -- lsp
 -- Peek Definition

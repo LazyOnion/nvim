@@ -44,6 +44,9 @@ require("lazy").setup({
   { "lambdalisue/suda.vim" }, -- 代替vim中的w !sudo tee %
   { "lewis6991/impatient.nvim" }, -- 加快在 Neovim 中加载 Lua 模块以缩短启动时间
 
+  -- for build and run
+  { "skywind3000/asyncrun.vim" },
+  { "skywind3000/asynctasks.vim" },
 
   -- lsp
   -- LSP Support
@@ -74,6 +77,13 @@ require("lazy").setup({
   { "lukas-reineke/indent-blankline.nvim" },
   -- alpha
   { "goolord/alpha-nvim" },
+
+  -- dap
+  { "ravenxrz/nvim-dap" },
+  { "theHamsta/nvim-dap-virtual-text" },
+  { "rcarriga/nvim-dap-ui" },
+  { "nvim-telescope/telescope-dap.nvim" },
+  { "mfussenegger/nvim-dap-python" },
 })
 
 

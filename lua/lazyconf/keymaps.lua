@@ -86,3 +86,7 @@ keymap("n", "<leader>ji", "<cmd>HopAnywhereCurrentLine<CR>", opts)
 keymap("n", "<leader>ja", "<cmd>HopAnywhere<CR>", opts)
 keymap("n", "<leader>jc", "<cmd>HopChar1<CR>", opts)
 keymap("n", "<leader>jC", "<cmd>HopChar2<CR>", opts)
+
+-- asynctasks
+keymap("n", "<leader>b", "<cmd>AsyncTask file-build<CR>", opts)
+keymap("n", "<leader>r", "<cmd>AsyncTask file-run<CR>", opts)

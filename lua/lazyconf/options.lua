@@ -36,3 +36,10 @@ opt.smartcase = true
 opt.termguicolors = true
 opt.signcolumn = "yes"
 vim.cmd("colorscheme gruvbox-material") -- 主题
+
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "dap-repl",
+--   callback = function(args)
+--     vim.api.nvim_buf_set_option(args.buf, "buflisted", false)
+--   end,
+-- })

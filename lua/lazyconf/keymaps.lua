@@ -72,6 +72,8 @@ keymap("n", "gr", "<cmd>Lspsaga rename<CR>")
 keymap("n", "gR", "<cmd>Lspsaga rename ++project<CR>")
 -- Lsp finder find the symbol definition implement reference
 keymap("n", "gf", "<cmd>Lspsaga lsp_finder<CR>")
+-- outline
+keymap("n", "go", "<cmd>Lspsaga outline<CR>")
 
 -- show_line_diagnostics float window unfocus
 keymap("n", "<leader>sl", "<cmd>Lspsaga show_line_diagnostics<CR>")
@@ -90,3 +92,13 @@ keymap("n", "<leader>jC", "<cmd>HopChar2<CR>", opts)
 -- asynctasks
 keymap("n", "<leader>b", "<cmd>AsyncTask file-build<CR>", opts)
 keymap("n", "<leader>r", "<cmd>AsyncTask file-run<CR>", opts)
+
+
+-- dap
+keymap("n", "<leader>gb", "<cmd>DapToggleBreakpoint<CR>", opts)
+keymap("n", "<leader>rl", "<cmd>DapToggleRepl<CR>", opts)
+keymap("n", "<leader>c", "<cmd>DapContinue<CR>", opts)
+keymap("n", "<leader>si", "<cmd>DapStepInto<CR>", opts)
+keymap("n", "<leader>st", "<cmd>DapStepOut<CR>", opts)
+keymap("n", "<leader>so", "<cmd>DapStepOver<CR>", opts)
+keymap("n", "<leader>t", "<cmd>DapTerminate<CR>", opts)

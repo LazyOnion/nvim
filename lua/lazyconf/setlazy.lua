@@ -81,7 +81,7 @@ require("lazy").setup({
   -- dap
   { "ravenxrz/nvim-dap" },
   { "theHamsta/nvim-dap-virtual-text" },
-  { "rcarriga/nvim-dap-ui" },
+  { "rcarriga/nvim-dap-ui", commit="b80227ea56a48177786904f6322abc8b2dc0bc36" },
   { "nvim-telescope/telescope-dap.nvim" },
   { "mfussenegger/nvim-dap-python" },
 })

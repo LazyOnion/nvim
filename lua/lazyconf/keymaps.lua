@@ -95,10 +95,12 @@ keymap("n", "<leader>r", "<cmd>AsyncTask file-run<CR>", opts)
 
 
 -- dap
-keymap("n", "<leader>gb", "<cmd>DapToggleBreakpoint<CR>", opts)
+keymap("n", "<leader>db", "<cmd>DapToggleBreakpoint<CR>", opts)
 keymap("n", "<leader>rl", "<cmd>DapToggleRepl<CR>", opts)
 keymap("n", "<leader>c", "<cmd>DapContinue<CR>", opts)
 keymap("n", "<leader>si", "<cmd>DapStepInto<CR>", opts)
 keymap("n", "<leader>st", "<cmd>DapStepOut<CR>", opts)
 keymap("n", "<leader>so", "<cmd>DapStepOver<CR>", opts)
 keymap("n", "<leader>t", "<cmd>DapTerminate<CR>", opts)
+keymap("n", "<leader>R", "<cmd>lua require'dap'.run_to_cursor()<CR>", opts)
+keymap("n", "K", "<cmd>lua require'dapui'.eval(vim.fn.input '[Expression] > ')<CR>", opts)

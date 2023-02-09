@@ -12,11 +12,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { "rebelot/kanagawa.nvim" }, -- 主题
-  { "sainnhe/gruvbox-material" },
+  { "rockerBOO/boo-colorscheme-nvim" }, -- 主题
+
   {
     "nvim-lualine/lualine.nvim", -- 状态栏
-    dependencies = { "kyazdani42/nvim-web-devicons"
+    dependencies = { 
+      "kyazdani42/nvim-web-devicons"
     }
   },
   { "numToStr/Comment.nvim" }, -- 注释
@@ -30,7 +31,6 @@ require("lazy").setup({
   { "nvim-neo-tree/neo-tree.nvim", -- 文件树
     branch = "v2.x",
     dependencies = {
-      "nvim-lua/plenary.nvim",
       "MunifTanjim/nui.nvim",
     }
   },
@@ -39,7 +39,6 @@ require("lazy").setup({
   { "p00f/nvim-ts-rainbow" }, -- 彩虹括号
   { "romgrk/barbar.nvim" }, -- bufferline
   { "iamcco/markdown-preview.nvim" }, --markdown预览
-  { "ellisonleao/glow.nvim" },
   { "akinsho/toggleterm.nvim" }, --terminal manager
   { "lambdalisue/suda.vim" }, -- 代替vim中的w !sudo tee %
   { "lewis6991/impatient.nvim" }, -- 加快在 Neovim 中加载 Lua 模块以缩短启动时间
@@ -51,8 +50,6 @@ require("lazy").setup({
   -- lsp
   -- LSP Support
   {"neovim/nvim-lspconfig"},             -- Required
-  {"williamboman/mason.nvim"},           -- Optional
-  {"williamboman/mason-lspconfig.nvim"}, -- Optional
 
   -- Autocompletion
   {"hrsh7th/nvim-cmp"},         -- Required
@@ -85,7 +82,6 @@ require("lazy").setup({
   { "nvim-telescope/telescope-dap.nvim" },
   { "mfussenegger/nvim-dap-python" },
 })
-
 
 
 

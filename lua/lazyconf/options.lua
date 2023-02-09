@@ -35,7 +35,8 @@ opt.smartcase = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
-vim.cmd("colorscheme gruvbox-material") -- 主题
+-- vim.cmd("colorscheme gruvbox-material") -- 主题
+vim.cmd("colorscheme crimson_moonlight") -- 主题
 
 -- vim.api.nvim_create_autocmd("FileType", {
 --   pattern = "dap-repl",
@@ -43,3 +44,6 @@ vim.cmd("colorscheme gruvbox-material") -- 主题
 --     vim.api.nvim_buf_set_option(args.buf, "buflisted", false)
 --   end,
 -- })
+-- if vim.fn.has("termguicolors") then
+--   vim.opt.termguicolors = true
+-- end

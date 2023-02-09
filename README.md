@@ -1,4 +1,4 @@
-## My Simple Neovim Configuration
+## My Neovim Configuration
 
 Fully written in lua and use [lazy.nvim](https://github.com/folke/lazy.nvim) as plugin manager.
 

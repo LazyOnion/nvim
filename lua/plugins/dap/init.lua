@@ -46,4 +46,3 @@ vim.fn.sign_define("DapLogPoint", { text = icons.dap.LogPoint, texthl = "DapLogP
 
 require("plugins.dap.dap-debugpy")
 require("plugins.dap.dap-ui")
--- dap.repl.close()

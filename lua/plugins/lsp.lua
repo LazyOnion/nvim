@@ -17,7 +17,6 @@ local luasnip = require 'luasnip'
 
 -- nvim-cmp setup
 local cmp = require 'cmp'
-local lspkind = require('lspkind')
 cmp.setup {
   snippet = {
     expand = function(args)
@@ -60,11 +59,8 @@ cmp.setup {
     { name = 'nvim_lsp_signature_help' },
   },
   window = {
-    completion = {
-      winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
-      col_offset = -3,
-      side_padding = 0,
-    },
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
   },
   formatting = {
     fields = { "kind", "abbr", "menu" },
@@ -80,6 +76,6 @@ cmp.setup {
 }
 
 vim.diagnostic.config({
-  virtual_text = false,
+  virtual_text = true,
   signs = true,
 })

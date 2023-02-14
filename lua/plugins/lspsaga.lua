@@ -1,6 +1,6 @@
 local ok, lspsaga = pcall(require, 'lspsaga')
-if not ok then 
-  return 
+if not ok then
+  return
 end
 
 lspsaga.setup {
@@ -13,10 +13,10 @@ lspsaga.setup {
     },
   },
   diagnostic = {
-    show_code_action = false,
-    show_source = false
+    show_code_action = true,
+    show_source = true,
   },
   lightbulb = {
-    enable = false
+    enable = true
   }
 }

@@ -25,6 +25,8 @@ dap.configurations.python = {
 				return "/usr/bin/python3"
 			end
 		end,
+        -- console = "integratedTerminal",
+        console = "externalTerminal",
 	},
 }
 

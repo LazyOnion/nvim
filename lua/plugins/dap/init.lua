@@ -25,7 +25,11 @@ dap.listeners.before.event_exited["dapui_config"] = function()
     dapui.close()
     dap.repl.close()
 end
-
+dap.defaults.fallback.external_terminal = {
+  command = '/usr/bin/alacritty';
+  args = {'-e'};
+}
+dap.defaults.fallback.terminal_win_cmd = '50vsplit new'
 -- We need to override nvim-dap's default highlight groups, AFTER requiring nvim-dap for catppuccin.
 -- vim.api.nvim_set_hl(0, "DapStopped", { fg = colors.green })
 
@@ -46,3 +50,4 @@ vim.fn.sign_define("DapLogPoint", { text = icons.dap.LogPoint, texthl = "DapLogP
 
 require("plugins.dap.dap-debugpy")
 require("plugins.dap.dap-ui")
+require("plugins.dap.dap-virtualtext")

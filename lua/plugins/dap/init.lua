@@ -47,7 +47,6 @@ vim.fn.sign_define(
     { text = icons.dap.BreakpointRejected, texthl = "DapBreakpoint", linehl = "", numhl = "" }
 )
 vim.fn.sign_define("DapLogPoint", { text = icons.dap.LogPoint, texthl = "DapLogPoint", linehl = "", numhl = "" })
-
 require("plugins.dap.dap-debugpy")
 require("plugins.dap.dap-ui")
 require("plugins.dap.dap-virtualtext")

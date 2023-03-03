@@ -35,7 +35,10 @@ opt.smartcase = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
-vim.cmd("colorscheme boo") -- 主题
+-- vim.cmd("colorscheme boo") -- 主题
+-- vim.cmd('colorscheme material')
+vim.g.material_style = "darker"
+vim.cmd 'colorscheme material'
 -- vim.cmd("colorscheme radioactive_waste") -- 主题
 
 -- vim.api.nvim_create_autocmd("FileType", {

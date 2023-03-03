@@ -2,10 +2,7 @@ local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
+    "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", -- latest stable release
     lazypath,
   })
 end
@@ -13,6 +10,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   { "rockerBOO/boo-colorscheme-nvim" }, -- 主题
+  { "marko-cerovac/material.nvim" },
 
   {
     "nvim-lualine/lualine.nvim", -- 状态栏
@@ -81,6 +79,7 @@ require("lazy").setup({
   { "rcarriga/nvim-dap-ui", commit="b80227ea56a48177786904f6322abc8b2dc0bc36" },
   { "nvim-telescope/telescope-dap.nvim" },
   { "mfussenegger/nvim-dap-python" },
+  -- { "Pocco81/DAPInstall.nvim", commit="3679132" },
 })
 
 

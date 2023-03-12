@@ -3,11 +3,13 @@
 Fully written in lua and use [lazy.nvim](https://github.com/folke/lazy.nvim) as plugin manager.
 
 ### some screenshots
-
-![image](https://user-images.githubusercontent.com/93063038/214219108-ab10d13d-a233-4c11-891b-6804d2b63e30.png)
-![image](https://user-images.githubusercontent.com/93063038/214219288-bedf3621-4d25-404f-87a6-63e304626578.png)
-![image](https://user-images.githubusercontent.com/93063038/214219432-004d59e6-83c2-44b1-8aac-1d47a3514f35.png)
-![image](https://user-images.githubusercontent.com/93063038/214219701-64e8f189-92da-41df-8c16-b5c634cd72a9.png)
+![image](https://user-images.githubusercontent.com/93063038/224531183-26a6636d-1e19-4727-ba53-79e416bba0b2.png)
+![image](https://user-images.githubusercontent.com/93063038/224531287-4ab4b877-7b34-4710-8af0-39f0f82bfc1c.png)
+![image](https://user-images.githubusercontent.com/93063038/224531345-192f22f2-9c32-4a76-bce8-7a167c5bacd9.png)
+![image](https://user-images.githubusercontent.com/93063038/224531497-198b2d1e-6bdb-4ccb-9de5-006bf5200f82.png)
+![image](https://user-images.githubusercontent.com/93063038/224531535-e98b6404-f7ed-4492-a39e-001de53a3796.png)
+![image](https://user-images.githubusercontent.com/93063038/224531572-7ebab3fc-6e04-4882-ae0f-08cae5bab118.png)
+![image](https://user-images.githubusercontent.com/93063038/224531615-6aec2c2e-0077-4275-a087-38a7da8ae914.png)
 ### keybindings
 
 ```
@@ -40,6 +42,7 @@ vim.g.mapleader = " "
 "gr" -- rename (normal mode)
 "gR" -- rename word in full project (normal mode)
 "gf" -- find the symbol definition implement reference (normal mode)
+"go" -- overview the variables classes functions methods
 
 "<leader>sl" -- show line diagnostics (normal mode)
 "<leader>sc" -- show cursor diagnostics (normal mode)
@@ -50,4 +53,10 @@ vim.g.mapleader = " "
 "<leader>ja" -- HopAnywhere (normal mode)
 "<leader>jc" -- HopChar1 (normal mode)
 "<leader>jC" -- HopChar2 (normal mode)
+
+"<leader>db" -- breakpoint
+"<leader>c" -- continue
+"<leader>so" -- step over
+"<leader>t" -- terminate
+...buxiangxiele!
 ```
